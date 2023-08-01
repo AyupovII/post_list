@@ -1,0 +1,28 @@
+@import '../../styles/colors.scss';
+
+.search{
+    position: relative;
+  width: 63.1rem;
+
+}
+.search__field{
+  padding: 0 5rem 0 2.6rem;
+  background-color: $grey;
+  height: 5.2rem;
+  font-size: 2rem;
+  color: $textWhite;
+  min-width: 56.5rem;
+};
+
+.search__icon{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  right: 1rem;
+  width: 2rem;
+  cursor: pointer;
+  color: $white;
+  transition: color 0.15s ease-in-out;
+}

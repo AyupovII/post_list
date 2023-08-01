@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "moduleResolution":"node",
+    "outDir": "./dist/",
+    "module": "es6",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    
+    "plugins": [
+      { "name": "typescript-plugin-css-modules" }
+] 
+  },
+  "include": ["./src/**/*", "declarations.d.ts"]
+}
