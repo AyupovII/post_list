@@ -1,15 +1,10 @@
 import React from "react"
-import  { FC } from "react"
-import  "./index.scss"
-import { ListType } from "../../type/dataType";
+import { FC } from "react"
+import "./index.scss"
 import Table from "../table/Table";
 
 
-const Content: FC = () =>{
- return (
- <div>
-  <Table />
-
- </div>)
+const Content: FC = () => {
+  return <Table />
 }
 export default Content

@@ -4,7 +4,7 @@ import Content from './components/content/Content';
 import Pagination from './components/pagination/Pagination';
 import './index.scss';
 
-const App: FC=()=> {
+const App: FC = () => {
   return (
     <div className="App">
       <Search />

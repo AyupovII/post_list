@@ -1,13 +1,16 @@
 @import '../../styles/colors.scss';
-table{
+
+table {
   display: inline-block;
 }
-.container{
+
+.container {
   height: 80vh;
   width: 100%;
   overflow-y: auto;
 }
-.header{
+
+.header {
   height: 5.4rem;
   background-color: $grey;
   color: $white;
@@ -16,53 +19,58 @@ table{
   border: 0;
   font-size: 1.4rem;
   font-weight: 600;
-};
+}
 
-th{
+th {
   cursor: pointer;
 }
-.content{  
-    height: 8.7rem;
-      td{
-        padding: 1.1rem;
-        border: 1px solid $borderColor;
-        font-size: 1.3rem;
-        };
-        td:nth-child(1){
-          text-align: center;
-        }
+
+.content {
+  height: 8.7rem;
+
+  td {
+    padding: 1.1rem;
+    border: 1px solid $borderColor;
+    font-size: 1.3rem;
+  }
+
+  td:nth-child(1) {
+    text-align: center;
+  }
 }
 
-.table{
+.table {
   display: flex;
   height: 5.4rem;
   font-size: 1.4rem;
   align-items: center;
-};
+}
 
-.column__id{
- min-width: 11rem;
-};
+.column__id {
+  min-width: 11rem;
+}
 
-.column__title{
+.column__title {
   min-width: 52.9rem;
 
-};
-
-.column__body{
-width: 100%;
 }
 
-.arrow{
+.column__body {
+  width: 100%;
+}
+
+.arrow {
   transition: transform .3s;
   margin-left: 2.5rem;
-    &__down{
-      margin-left: 2.5rem;
-      transition: transform .3s;
-      transform: rotate(180deg);
+
+  &__down {
+    margin-left: 2.5rem;
+    transition: transform .3s;
+    transform: rotate(180deg);
   }
 }
-.notFound{
+
+.notFound {
   padding: 10rem 10rem;
   font-size: 2.4rem;
   text-align: center;

@@ -6,9 +6,7 @@ import { useDispatch } from "react-redux";
 
 const Search:FC = ()=>{
   const [query, setQuery] = useState("");
-  console.log(query);
   const dispatch = useDispatch();
-
 
   useEffect(()=>{
     dispatch(setValueQuery(query));

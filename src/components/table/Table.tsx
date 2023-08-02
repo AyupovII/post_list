@@ -14,7 +14,7 @@ const Table: FC = () => {
   const dispatch = useDispatch();
   const [sortColumn, setSortColumn] = useState({ _sort: "id", _order: "asc" })
 
-  const fetchProducts = useCallback( async() => {
+  const fetchProducts = useCallback(async () => {
     try {
       //responseFullData - необходим только для получения total(для пагинации) так как бэк не предоставляет их
       const responseFullData = await axios("https://jsonplaceholder.typicode.com/posts", {
@@ -38,7 +38,7 @@ const Table: FC = () => {
     } catch (error) {
       console.log(error)
     }
-  },[dispatch, query, sortColumn, currentPage])
+  }, [dispatch, query, sortColumn, currentPage])
 
   useEffect(() => {
     fetchProducts();
@@ -56,7 +56,10 @@ const Table: FC = () => {
         <tr className={style.header}>
           {column.map(columnName => {
             return <th className={style[`column__${columnName.code}`]} onClick={() => handlerSort(columnName.code)}>{columnName.name}
-              <img src={arrow} className={style[`arrow${sortColumn._order === "desc" && sortColumn._sort === columnName.code ? "__down" : ""}`]} alt="Arrow" /> </th>
+              <img src={arrow}
+                className={style[`arrow${sortColumn._order === "desc" && sortColumn._sort === columnName.code ? "__down" : ""}`]}
+                alt="Arrow" />
+            </th>
           })}
         </tr>
         {data.length ? data.map(el => {
